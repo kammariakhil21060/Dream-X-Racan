@@ -1,0 +1,15 @@
+import { chromium } from '@playwright/test';
+import { mkdir } from 'node:fs/promises';
+await mkdir('artifacts',{recursive:true});
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:3000');await page.getByRole('heading',{name:'Small brands. Big love.'}).waitFor();await page.evaluate(()=>document.fonts.ready);await page.locator('footer').scrollIntoViewIfNeeded(); await page.locator('img').evaluateAll(imgs=>Promise.all(imgs.map(i=>i.decode().catch(()=>{})))); await page.evaluate(()=>scrollTo(0,0)); await page.screenshot({path:'artifacts/home-desktop.png',fullPage:true});
+console.log('Desktop:',await page.title(),'images broken:',await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src)));
+await page.getByRole('button',{name:'Your profile',exact:true}).click();await page.getByRole('button',{name:'Shopper',exact:true}).click();await page.getByRole('dialog').waitFor({state:'hidden'});
+await page.goto('http://127.0.0.1:3000/product/p1');await page.getByRole('button',{name:'Add to bag',exact:true}).click();await page.getByRole('status').filter({hasText:'added to your bag'}).waitFor();
+await page.goto('http://127.0.0.1:3000/cart');await page.getByRole('heading',{name:'The Sunday Linen Dress'}).waitFor();await page.screenshot({path:'artifacts/cart-desktop.png',fullPage:true});
+await page.goto('http://127.0.0.1:3000/reels?id=r1');await page.getByRole('button',{name:'Next Reel',exact:true}).click();await page.getByText('2 / 12',{exact:true}).waitFor();await page.screenshot({path:'artifacts/reels-desktop.png',fullPage:true});
+await page.setViewportSize({width:390,height:844});await page.goto('http://127.0.0.1:3000');await page.getByRole('heading',{name:'Small brands. Big love.'}).waitFor();await page.locator('footer').scrollIntoViewIfNeeded(); await page.locator('img').evaluateAll(imgs=>Promise.all(imgs.map(i=>i.decode().catch(()=>{})))); await page.evaluate(()=>scrollTo(0,0)); await page.screenshot({path:'artifacts/home-mobile.png',fullPage:true});console.log('Mobile overflow:',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+await page.goto('http://127.0.0.1:3000/product/p1');await page.getByRole('button',{name:'Add to bag',exact:true}).waitFor();await page.screenshot({path:'artifacts/product-mobile.png',fullPage:true});
+console.log('Page errors:',errors);await browser.close();if(errors.length)process.exitCode=1;

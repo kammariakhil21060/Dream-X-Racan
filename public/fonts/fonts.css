@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Racan Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/racan-sans-0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Racan Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/racan-sans-1.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Racan Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/racan-sans-2.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Racan Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/racan-sans-3.woff2) format('truetype');
+}
+
+@font-face {
+  font-family: 'Racan Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/racan-serif-0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Racan Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/racan-serif-1.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Racan Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/racan-serif-2.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Racan Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/racan-serif-3.woff2) format('truetype');
+}
