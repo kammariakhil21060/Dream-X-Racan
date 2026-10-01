@@ -103,3 +103,10 @@ footer{background:#fff;border-top-color:#f1dfe6}
 .edit-hero.gen-z{background:#f7c5da}
 .edit-hero.women{background:#f3e2d7}
 .edit-hero.gen-z h1 em{color:#d62969}
+/* RACAN Logo */
+.racan-logo{
+  height:46px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+}
