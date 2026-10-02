@@ -45,7 +45,7 @@ export function SearchDialog({onClose}:{onClose:()=>void}){
   const navigate=useNavigate();
   const {catalog}=useStore() as any;
   return (
-    <Modal open onClose={onClose}>
+    <Modal title="Search" onClose={onClose}>
       <div className="search-dialog">
         <div className="search-input-wrap"><Search size={18}/><input autoFocus placeholder="Search..." value={q} onChange={e=>setQ(e.target.value)}/><button onClick={onClose}><X size={18}/></button></div>
         <div className="search-results">
