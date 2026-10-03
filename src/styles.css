@@ -251,84 +251,59 @@ footer{background:#fff;border-top-color:#f1dfe6}
 }
 
 
-/* =========================================================
+/* -------------------------
    REELS
-   WOMEN CREAM / BEIGE
-   ========================================================= */
+   Women Cream / Beige
+   ------------------------- */
 
-.reels-preview{
-  background:#FFF8F0;
+.reels-page,
+.reels-preview {
+  background: #F7EEE8;
 }
 
-.reels-preview .section-head .eyebrow{
-  color:#7C4A3D;
+.reel-grid {
+  border-color: #E4CFC2;
 }
 
-.reels-preview .section-head h2{
-  color:#5D2D24;
-}
-
-.reels-preview .reel-grid{
-  background:#F5E7DB;
-  border-color:#E6D0BF;
-}
-
-.reels-preview .reels-note{
-  background:#EBDDD0;
-  border-color:#DEC6B3;
-}
-
-.reels-preview .reels-note a{
-  color:#A94D5D;
+.page:has(.reels-page) .chips button.active,
+.page:has(.reel-grid) .chips button.active {
+  background: #A96A62;
+  border-color: #A96A62;
+  color: #fff;
 }
 
 
-/* =========================================================
+/* -------------------------
    BRANDS
-   PINK
-   ========================================================= */
+   Same Pink Theme as Gen Z
+   ------------------------- */
 
-.brands-page{
-  background:#FFF0F7;
+.brands-page {
+  background: #fff8fb;
 }
 
-.brands-page .page-title{
-  background:#FEE8F5;
-  border-color:#F0C7D7;
+.brands-page .page-title {
+  background: linear-gradient(
+    135deg,
+    #FEE8F5 0%,
+    #DE2161 100%
+  );
 }
 
-.brands-page .page-title .eyebrow{
-  color:#B8154C;
+.brands-page .chips button.active {
+  background: #DE2161;
+  border-color: #DE2161;
+  color: #fff;
 }
 
-.brands-page .page-title h1 em{
-  color:#DE2161;
+.brands-page .brand-card {
+  background: #FEE8F5;
+  border-color: #EBC5D4;
 }
 
-.brands-page .chips button.active{
-  background:#DE2161;
-  border-color:#DE2161;
-  color:#FFFFFF;
+.brands-page .brand-card:hover {
+  border-color: #DE2161;
 }
-
-.brands-page .chips button:hover{
-  border-color:#DE2161;
-  color:#DE2161;
-}
-
-.brands-page .brand-grid{
-  background:#FFF0F7;
-}
-
-.brands-page .brand-card{
-  background:#FDE1EC;
-  border-color:#EFB0C8;
-}
-
-.brands-page .brand-card h3{
-  color:#8F1748;
-}
-
 
 /* =========================================================
    COMMON PINK BUTTONS
