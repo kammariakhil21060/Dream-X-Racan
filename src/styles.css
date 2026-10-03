@@ -110,3 +110,10 @@ footer{background:#fff;border-top-color:#f1dfe6}
   display:block;
   object-fit:contain;
 }
+/* Gen Z Theme */
+.category-strip { background: #FCE4EC !important; border: 2px solid #F8BBD0 !important; }
+.category-strip h2 { color: #880E4F !important; }
+
+/* Women Theme */
+.brand-cta { background: #F5F1E8 !important; border: 2px solid #D7CCC8 !important; }
+.brand-cta h2 { color: #3E2723 !important; }
