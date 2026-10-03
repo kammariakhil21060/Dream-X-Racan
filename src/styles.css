@@ -112,7 +112,13 @@ footer{background:#fff;border-top-color:#f1dfe6}
 }
 
 /* =========================================================
-   1. DISCOVER
+   RACAN — CORRECTED PINK + CREAM THEME
+   COLOUR CHANGES ONLY
+   ========================================================= */
+
+
+/* =========================================================
+   DISCOVER
    Pink + Cream
    ========================================================= */
 
@@ -133,12 +139,6 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#5F4A52;
 }
 
-/* Discover category filters */
-.page > .chips{
-  background:#FFF8FB;
-  border-color:#F0D5E1;
-}
-
 .page > .chips button.active{
   background:#DE2161;
   border-color:#DE2161;
@@ -150,7 +150,6 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#DE2161;
 }
 
-/* Discover sorting area */
 .catalog-bar{
   border-color:#F0D5E1;
 }
@@ -165,26 +164,10 @@ footer{background:#fff;border-top-color:#f1dfe6}
   outline:none;
 }
 
-/* Discover product area */
-.page .product-grid{
-  background:#FFF8FB;
-}
-
-/* Discover pagination */
-.page .pagination .btn.secondary{
-  border-color:#DE2161;
-  color:#DE2161;
-  background:#FFFFFF;
-}
-
-.page .pagination .btn.secondary:hover:not(:disabled){
-  background:#FEE8F5;
-}
-
 
 /* =========================================================
-   2. GEN Z
-   Pink theme
+   GEN Z
+   PINK ONLY
    ========================================================= */
 
 .page:has(.edit-hero.gen-z){
@@ -208,7 +191,9 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#5F3B49;
 }
 
-/* Gen Z filter buttons */
+
+/* Gen Z category buttons */
+
 .page:has(.edit-hero.gen-z) .chips button.active{
   background:#DE2161;
   border-color:#DE2161;
@@ -220,7 +205,9 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#DE2161;
 }
 
-/* Gen Z reel section */
+
+/* Gen Z reels */
+
 .page:has(.edit-hero.gen-z) .reel-grid{
   background:#FEE0EB;
   border-color:#F1C3D3;
@@ -228,8 +215,8 @@ footer{background:#fff;border-top-color:#f1dfe6}
 
 
 /* =========================================================
-   3. WOMEN
-   Cream / Beige theme
+   WOMEN
+   CREAM / BEIGE ONLY
    ========================================================= */
 
 .page:has(.edit-hero.women){
@@ -253,7 +240,9 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#5D463D;
 }
 
-/* Women filter buttons */
+
+/* Women category buttons */
+
 .page:has(.edit-hero.women) .chips button.active{
   background:#A94D5D;
   border-color:#A94D5D;
@@ -265,21 +254,18 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#A94D5D;
 }
 
+
 /* Women brand section */
+
 .page:has(.edit-hero.women) .section{
   background:#F5E7DB;
   border-color:#E6D0BF;
 }
 
-.page:has(.edit-hero.women) .section .section-head .eyebrow{
-  color:#7C4A3D;
-}
-
 
 /* =========================================================
-   4. REELS
-   Cream / Beige
-   Same visual family as Women
+   REELS
+   WOMEN CREAM / BEIGE COLOURS
    ========================================================= */
 
 .reels-preview{
@@ -310,48 +296,46 @@ footer{background:#fff;border-top-color:#f1dfe6}
 
 
 /* =========================================================
-   5. BRANDS
-   Pink theme
+   BRANDS
+   PINK ONLY
    ========================================================= */
 
-/* Brands page title */
-.page:has(.brand-grid) .page-title{
+/*
+   IMPORTANT:
+   Do NOT use .page:has(.brand-grid) here.
+   Women also contains .brand-grid.
+*/
+
+.page-title{
   background:#FEE8F5;
   border-color:#F0C7D7;
 }
 
-.page:has(.brand-grid) .page-title .eyebrow{
+.page-title .eyebrow{
   color:#B8154C;
 }
 
-.page:has(.brand-grid) .page-title h1 em{
+.page-title h1 em{
   color:#DE2161;
 }
 
-/* Brands category filters */
-.page:has(.brand-grid) > .chips button.active{
+
+/* Brands filter buttons */
+
+.page:has(.page-title) .chips button.active{
   background:#DE2161;
   border-color:#DE2161;
   color:#FFFFFF;
 }
 
-.page:has(.brand-grid) > .chips button:hover{
+.page:has(.page-title) .chips button:hover{
   border-color:#DE2161;
   color:#DE2161;
 }
 
-/* Brand cards */
-.page:has(.brand-grid) .brand-card{
-  border-color:#F0C7D7;
-}
-
-.page:has(.brand-grid) .brand-card h3{
-  color:#8F1748;
-}
-
 
 /* =========================================================
-   6. COMMON RACAN PINK BUTTONS
+   COMMON PINK BUTTONS
    ========================================================= */
 
 .btn.pink,
@@ -363,22 +347,10 @@ footer{background:#fff;border-top-color:#f1dfe6}
   color:#FFFFFF;
 }
 
-.btn.pink:hover,
-.hero-1 .btn:hover,
-.purchase-row .btn.pink:hover,
-.purchase-row .btn:last-child:hover{
-  background:#C91B56;
-  border-color:#C91B56;
-}
-
 
 /* =========================================================
-   7. GENERAL PINK ACCENTS
+   GENERAL PINK ACCENTS
    ========================================================= */
-
-a:hover{
-  color:#DE2161;
-}
 
 .text-link{
   color:#DE2161;
