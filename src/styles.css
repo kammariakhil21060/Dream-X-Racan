@@ -111,334 +111,244 @@ footer{background:#fff;border-top-color:#f1dfe6}
   object-fit:contain;
 }
 
-:root {
-  --pink: #DE2161;
-  --blush: #FEE8F5;
-  --cream: #EBDDD0;
-  --line: #ead6df;
-}
-
-body {
-  background: #fff8fb;
-}
-
-.announcement {
-  background: #FEE8F5;
-  color: #DE2161;
-}
+/* =========================================================
+   RACAN — FINAL PINK + CREAM THEME
+   COLOUR CHANGES ONLY
+   ========================================================= */
 
 
-/* -------------------------
-   DISCOVER / GENERAL HERO
+/* =========================================================
+   DISCOVER
    Pink + Cream
-   ------------------------- */
+   ========================================================= */
 
-.hero-0,
-.hero-1 {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5 0%,
-    #EBDDD0 100%
-  );
+.page-title{
+  background:#FEE8F5;
+  border-color:#F0D5E1;
 }
 
-.hero-1 {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5 0%,
-    #EBDDD0 100%
-  );
+.page-title .eyebrow{
+  color:#B8154C;
 }
 
-.hero-1 .btn,
-.btn.pink {
-  background: #DE2161;
-  border-color: #DE2161;
-  color: #fff;
+.page-title h1 em{
+  color:#DE2161;
 }
 
-.purchase-row .btn.secondary {
-  border-color: #DE2161;
-  color: #DE2161;
-  background: #fff;
+.page-title p{
+  color:#5F4A52;
 }
 
-.category-icon {
-  background: #FEE8F5;
-  border-color: #EBDDD0;
+.page > .chips button.active{
+  background:#DE2161;
+  border-color:#DE2161;
+  color:#FFFFFF;
 }
 
-.brand-cta {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5,
-    #EBDDD0
-  );
+.page > .chips button:hover{
+  border-color:#DE2161;
+  color:#DE2161;
 }
 
-.section.container,
-.reels-preview.container {
-  background: #fff;
-  border-color: #ead6df;
+.catalog-bar{
+  border-color:#F0D5E1;
 }
 
-.worlds {
-  background: #fff;
-  border-color: #ead6df;
+.catalog-bar select{
+  border-color:#E8CCD7;
+  background:#FFF8FB;
+}
+
+.catalog-bar select:focus{
+  border-color:#DE2161;
+  outline:none;
 }
 
 
-/* -------------------------
+/* =========================================================
    GEN Z
-   Pink Theme
-   ------------------------- */
+   PINK
+   ========================================================= */
 
-.edit-hero.gen-z {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5 0%,
-    #DE2161 100%
-  );
+.page:has(.edit-hero.gen-z){
+  background:#FEE8F5;
 }
 
-.edit-hero.gen-z h1 em {
-  color: #DE2161;
+.edit-hero.gen-z{
+  background:#F7C5DA;
+  border-color:#ED9DBB;
 }
 
-.page:has(.edit-hero.gen-z) .chips button.active {
-  background: #DE2161;
-  border-color: #DE2161;
-  color: #fff;
+.edit-hero.gen-z h1 em{
+  color:#DE2161;
 }
 
-.page:has(.edit-hero.gen-z) .reel-grid {
-  background: #FEE8F5;
+.edit-hero.gen-z .eyebrow{
+  color:#B8154C;
 }
 
-.genz-world .world-circle {
-  background: #FEE8F5;
-  border-color: #DE2161;
+.edit-hero.gen-z p{
+  color:#5F3B49;
+}
+
+.page:has(.edit-hero.gen-z) .chips button.active{
+  background:#DE2161;
+  border-color:#DE2161;
+  color:#FFFFFF;
+}
+
+.page:has(.edit-hero.gen-z) .chips button:hover{
+  border-color:#DE2161;
+  color:#DE2161;
+}
+
+.page:has(.edit-hero.gen-z) .reel-grid{
+  background:#FEE0EB;
+  border-color:#F1C3D3;
 }
 
 
-/* -------------------------
+/* =========================================================
    WOMEN
-   Cream / Beige Theme
-   ------------------------- */
+   CREAM / BEIGE
+   ========================================================= */
 
-.edit-hero.women {
-  background: linear-gradient(
-    135deg,
-    #EBDDD0 0%,
-    #F7EEE8 100%
-  );
+.page:has(.edit-hero.women){
+  background:#FFF8F0;
 }
 
-.edit-hero.women h1 em {
-  color: #A96A62;
+.edit-hero.women{
+  background:#EBDDD0;
+  border-color:#DEC6B3;
 }
 
-.page:has(.edit-hero.women) .chips button.active {
-  background: #A96A62;
-  border-color: #A96A62;
-  color: #fff;
+.edit-hero.women h1 em{
+  color:#A94D5D;
 }
 
-.page:has(.edit-hero.women) .section {
-  background: #F7EEE8;
-  border-color: #E4CFC2;
+.edit-hero.women .eyebrow{
+  color:#7C4A3D;
+}
+
+.edit-hero.women p{
+  color:#5D463D;
+}
+
+.page:has(.edit-hero.women) .chips button.active{
+  background:#A94D5D;
+  border-color:#A94D5D;
+  color:#FFFFFF;
+}
+
+.page:has(.edit-hero.women) .chips button:hover{
+  border-color:#A94D5D;
+  color:#A94D5D;
+}
+
+.page:has(.edit-hero.women) .section{
+  background:#F5E7DB;
+  border-color:#E6D0BF;
 }
 
 
-/* -------------------------
+/* =========================================================
    REELS
-   Women Cream / Beige
-   ------------------------- */
+   WOMEN CREAM / BEIGE
+   ========================================================= */
 
-.reels-page,
-.reels-preview {
-  background: #F7EEE8;
+.reels-preview{
+  background:#FFF8F0;
 }
 
-.reel-grid {
-  border-color: #E4CFC2;
+.reels-preview .section-head .eyebrow{
+  color:#7C4A3D;
 }
 
-.page:has(.reels-page) .chips button.active,
-.page:has(.reel-grid) .chips button.active {
-  background: #A96A62;
-  border-color: #A96A62;
-  color: #fff;
+.reels-preview .section-head h2{
+  color:#5D2D24;
+}
+
+.reels-preview .reel-grid{
+  background:#F5E7DB;
+  border-color:#E6D0BF;
+}
+
+.reels-preview .reels-note{
+  background:#EBDDD0;
+  border-color:#DEC6B3;
+}
+
+.reels-preview .reels-note a{
+  color:#A94D5D;
 }
 
 
-/* -------------------------
+/* =========================================================
    BRANDS
-   Pink Theme
-   ------------------------- */
+   PINK
+   ========================================================= */
 
-.brands-page {
-  background: #fff8fb;
+.brands-page{
+  background:#FFF0F7;
 }
 
-.brands-page .page-title {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5,
-    #fff
-  );
+.brands-page .page-title{
+  background:#FEE8F5;
+  border-color:#F0C7D7;
 }
 
-.brands-page .chips button.active {
-  background: #DE2161;
-  border-color: #DE2161;
-  color: #fff;
+.brands-page .page-title .eyebrow{
+  color:#B8154C;
 }
 
-.brands-page .brand-card {
-  background: #FEE8F5;
-  border-color: #EBC5D4;
+.brands-page .page-title h1 em{
+  color:#DE2161;
 }
 
-.brands-page .brand-card:hover {
-  border-color: #DE2161;
+.brands-page .chips button.active{
+  background:#DE2161;
+  border-color:#DE2161;
+  color:#FFFFFF;
 }
 
-
-/* -------------------------
-   WORLD CARDS
-   ------------------------- */
-
-.world-card {
-  background: #FEE8F5;
+.brands-page .chips button:hover{
+  border-color:#DE2161;
+  color:#DE2161;
 }
 
-.women-world {
-  background: #EBDDD0;
+.brands-page .brand-grid{
+  background:#FFF0F7;
 }
 
+.brands-page .brand-card{
+  background:#FDE1EC;
+  border-color:#EFB0C8;
+}
 
-/* -------------------------
-   HOME BRAND TILES
-   Pink
-   ------------------------- */
-
-.home-brands .brand-tile {
-  background: #FEE8F5;
-  border-color: #EBC5D4;
+.brands-page .brand-card h3{
+  color:#8F1748;
 }
 
 
-/* -------------------------
-   PRODUCTS
-   ------------------------- */
+/* =========================================================
+   COMMON PINK BUTTONS
+   ========================================================= */
 
-.product-card {
-  background: #fff;
-  border-color: #eadde3;
+.btn.pink,
+.hero-1 .btn,
+.purchase-row .btn.pink,
+.purchase-row .btn:last-child{
+  background:#DE2161;
+  border-color:#DE2161;
+  color:#FFFFFF;
 }
 
-
-/* -------------------------
-   CAMPAIGNS
-   ------------------------- */
-
-.campaign {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5,
-    #EBDDD0
-  );
+.text-link{
+  color:#DE2161;
 }
 
-
-/* -------------------------
-   DASHBOARD
-   ------------------------- */
-
-.dash-sidebar {
-  background: #fff8fb;
+.filter-tabs button.active{
+  background:#DE2161;
+  border-color:#DE2161;
+  color:#FFFFFF;
 }
-
-.dash-sidebar button.active {
-  background: #FEE8F5;
-  color: #DE2161;
-}
-
-
-/* -------------------------
-   FOOTER
-   ------------------------- */
-
-footer {
-  background: #fff;
-  border-top-color: #ead6df;
-}
-
-
-/* -------------------------
-   GENERAL BUTTONS / LINKS
-   ------------------------- */
-
-.btn {
-  background: #DE2161;
-  border-color: #DE2161;
-}
-
-.btn:hover {
-  background: #c91d58;
-  border-color: #c91d58;
-}
-
-a {
-  color: #DE2161;
-}
-
-
-/* -------------------------
-   FILTER / CHIP DEFAULTS
-   ------------------------- */
-
-.chips button:hover {
-  border-color: #DE2161;
-  color: #DE2161;
-}
-
-
-/* -------------------------
-   FORM FOCUS
-   ------------------------- */
-
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: #DE2161;
-  outline-color: #DE2161;
-}
-
-
-/* -------------------------
-   PAGINATION
-   ------------------------- */
-
-.pagination .btn.secondary {
-  background: #fff;
-  color: #DE2161;
-  border-color: #DE2161;
-}
-
-
-/* -------------------------
-   BRAND PROFILE
-   ------------------------- */
-
-.brand-profile-head {
-  border-color: #EBC5D4;
-}
-
-.brand-tabs button.active {
-  color: #DE2161;
-  border-color: #DE2161;
-}
-
-
