@@ -275,19 +275,15 @@ footer{background:#fff;border-top-color:#f1dfe6}
 
 /* -------------------------
    BRANDS
-   Same Pink Theme as Gen Z
+   Reference Pink Theme
    ------------------------- */
 
 .brands-page {
-  background: #fff8fb;
+  background: #FFF8FB;
 }
 
 .brands-page .page-title {
-  background: linear-gradient(
-    135deg,
-    #FEE8F5 0%,
-    #DE2161 100%
-  );
+  background: #F5C6DA;
 }
 
 .brands-page .chips button.active {
@@ -297,8 +293,8 @@ footer{background:#fff;border-top-color:#f1dfe6}
 }
 
 .brands-page .brand-card {
-  background: #FEE8F5;
-  border-color: #EBC5D4;
+  background: #F5C6DA;
+  border-color: #E6A9C2;
 }
 
 .brands-page .brand-card:hover {
